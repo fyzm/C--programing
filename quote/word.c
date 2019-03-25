@@ -19,5 +19,7 @@ void read_word(char *word,int len)
       word[pos++] = ch;
     ch = read_char();
   }
+  if((pos - 1) ==(len - 1))
+    word[len-1] = '*';
   word[pos] = '\0';
 }
