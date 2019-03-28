@@ -71,5 +71,39 @@ struct {
 } employee1,employee2;
 
 
+/* 
+book: name,author,pages
+
+cup: design
+
+shift: design color,size
+ */
+struct catalg_item{
+  int stock_number;
+  double price;
+  int item_type;
+  union {
+    struct {
+      char title;
+      char author;
+      int num_pages;
+    }book;
+    struct {
+      char design;
+    }mug;
+    struct {
+      char design;
+      int size;
+      int color;
+    }shirt;
+  }item;
+}
+
+// typedef union {
+//   int i;
+//   double d;
+// } Number;
+// Number number_array[1000];
+
 
 
