@@ -114,7 +114,19 @@ int day_of_year(struct date d)
 
 
 
+enum {MON,TUE,WED,THU,FRI,SAT,SUN};
 
+
+typedef enum{MON,TUE,WED,THU,FRI,SAT,SUN}weekday;
+
+
+
+struct pinball_machine {
+  char name[41];
+  int year;
+  enum {EM,SS} type;
+  int player;
+};
 
 
 
