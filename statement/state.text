@@ -1,0 +1,23 @@
+
+存储类型 类型说明符 声明符
+static float x,y,*p;
+
+1.类型限定符，2类型说明符 声明符
+const char month[] = "January"
+
+存储类型 类型限定符 类型说明符 
+extern const unsigned long int a[10]
+
+1.存储类型
+
+1.1变量的性质
+1.1.1 存储期限
+1.1.2 作用域
+1.1.3 链接
+
+1.2 auto类型
+//
+1.3 static类型
+1.4 extern 存储类型
+1.5 register 存储类型
+1.6 函数的存储类型
